@@ -22,3 +22,12 @@ Archivo: **op1_word2vec.py**
 3. Se entrena el modelo con el corpus creado.
 4. Para cada dato, se infiere un vector utilizando el modelo creado. **Nota**: Se excluyen los datos vacíos o que solo contengan valores numéricos.
 5. A partir del vector, se obtiene el valor del catálogo más similar.
+
+## Opción 2: fuzzywuzzy
+
+Archivo: **op2_fuzzywuzzy.py**
+
+**Proceso**
+1. Se crea un diccionario cuya clave es el texto del catálogo y el valor es la clave del catálogo.
+2. Se crea una función que obtiene el texto del diccionario más cercano dado otro texto utilizando la distancia de Levenshtein.
+3. Para cada dato se obtiene el texto más cercano y su correspondiente clave. **Nota**: Se excluyen los datos vacíos o que solo contengan valores numéricos.
