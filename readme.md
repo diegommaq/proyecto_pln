@@ -31,3 +31,12 @@ Archivo: **op2_fuzzywuzzy.py**
 1. Se crea un diccionario cuya clave es el texto del catálogo y el valor es la clave del catálogo.
 2. Se crea una función que obtiene el texto del diccionario más cercano dado otro texto utilizando la distancia de Levenshtein.
 3. Para cada dato se obtiene el texto más cercano y su correspondiente clave. **Nota**: Se excluyen los datos vacíos o que solo contengan valores numéricos.
+
+## Opción 2: Doc2Vec y fuzzywuzzy
+
+Archivo: **op3_doc2vec_fuzzywuzzy.py**
+
+**Proceso**
+1. Se repiten los procesos anteriores para obtener el vector más similar y el valor más cercano de acuerdo a la distancia de Levenshtein.
+2. Se comparan ambos resultados para determinar cuál es más cercano
+3. De la comparación se toma el valor más cercano.
